@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+
+    <!-- title -->
+    <title>Trains Whoo</title>
+
+    <!-- metas -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- BootStrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Slate CDN -->
+    <link rel="stylesheet" href="https://bootswatch.com/slate/bootstrap.min.css">
+
+    <!-- css -->
+    <link rel="stylesheet" type="style/css" href="assets/css/style.css">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+
+    <!-- Moment JS -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.18.1/moment.min.js"></script>
+
+</head>
+
+<body class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="bg1" background="assets/media/train.jpg">
+
+
+  <nav class="navbar navbar-default">
+
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainnavi">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">THE TRAIN PAGE!!!</a>
+      </div>
+      <div class="collapse navbar-collapse" id="mainnavi">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="https://copeland87.github.io/">Home</a></li>
+          <li><a href="https://copeland87.github.io/tools/tools.html">Quick Tools</a></li>
+          <li><a href="https://copeland87.github.io/project/project.html">Projects</a></li>
+          <li><a href="https://copeland87.github.io/archive/archive.html">Archive</a></li>
+          <li><a href="https://copeland87.github.io/favorites/favorites.html">Favorite Pages</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- audio -->
+  <div class="row">
+    <div class="col-lg-12">
+      <audio src="assets/media/crazytrain-remastered.mp3" controls> 
+        <p>#Crazy Train</p>
+      </audio>
+    </div>
+  </div>
+
+  <!-- body -->
+
+  <div class="container schedule-container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Train Schedule</h3>
+          </div>
+          <div class="panel-body">
+
+            <table class="train-schedule">
+              <tr>
+                <th class="col-xs-3">Train Name</th>
+                <th class="col-xs-2">Destination</th>
+                <th class="col-xs-2">Frequency (min)</th>
+                <th class="col-xs-2">Next Arrival</th>
+                <th class="col-xs-2">Minutes Away</th>
+              </tr>
+            </table>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+  <div class="container input-container">
+    <div class="row">
+
+      <div class="col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Add Train</h3>
+          </div>
+          <div class="panel-body">
+
+          <form role="form">
+            <div class="form-group">
+              <label for="text">Train Name</label>
+              <input type="text" class="form-control" id="name-input">
+            </div>
+            <div class="form-group">
+              <label for="text">Destination</label>
+              <input type="text" class="form-control" id="destination-input">
+            </div>
+            <div class="form-group">
+              <label for="text">First Train Time (HH:mm - military time)</label>
+              <input type="text" class="form-control" id="first-train-time-input">
+            </div>
+            <div class="form-group">
+              <label for="comment">Frequency (min)</label>
+              <input type="text" class="form-control" id="frequency-input">
+            </div>
+             
+            <button type="submit" class="btn btn-primary" id="add-train">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+       
+
+  <script src="assets/javascript/app.js"></script>
+    
+  </body>
+  </html>

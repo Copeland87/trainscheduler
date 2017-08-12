@@ -1,0 +1,36 @@
+body {
+	width: 1000px;
+	margin: 0 auto;
+	background-color: black;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+a {
+    color: red;
+}
+a:hover {
+    color: white;
+}
+
+img {
+  border-radius: 20%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+img:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+#bg1 {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.9;
+}
